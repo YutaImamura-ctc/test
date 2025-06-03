@@ -1,7 +1,9 @@
-name: learn-github-actions
+name: GitHub Actions Demo
+
 on: [push]
+
 jobs:
-check-bats-version:
-runs-on: ubuntu-latest
-steps:
-- run: echo "Hello World"
+  echo_hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world!!"
